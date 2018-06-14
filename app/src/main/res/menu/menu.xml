@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+ <item
+     android:id="@+id/updateVariablesRealTime"
+     android:orderInCategory="100"
+     android:title="Actualizar"
+     android:icon="@drawable/ic_action_autorenew"
+     app:showAsAction="always"/>
+
+
+ <item
+     android:id="@+id/action_device_master"
+     android:orderInCategory="100"
+     android:title="Master"
+     app:showAsAction="always"/>
+
+ <item
+     android:id="@+id/action_settings"
+     android:orderInCategory="100"
+     android:title="Opciones"
+     android:icon="@drawable/ic_launcher_menu"
+     app:showAsAction="always" >
+
+  <menu>
+   <item android:id="@+id/historial_medidas" android:title="@string/menu_historial"> </item>
+   <item android:id="@+id/tipo_variable" android:title="@string/tipo_variable"> </item>
+   <item android:id="@+id/cerrar_sesion" android:title="@string/menu_cerrar_sesion"> </item>
+  </menu>
+ </item>
+
+
+
+
+</menu>

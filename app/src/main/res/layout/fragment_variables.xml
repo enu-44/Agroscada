@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayouSpeedView"
+    android:layout_width="match_parent"
+    android:background="@color/DarkGrayColor"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:orientation="vertical">
+
+            <TextClock
+                android:id="@+id/textClock"
+                android:layout_marginBottom="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="10dp"
+                android:format12Hour="hh:mm:ss a"
+                android:gravity="right"
+                android:textColor="@color/WhiteColor"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+
+            <!--..........................................................-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrayColor"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/time"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txtTitleMedidaPosition1"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/txtHourMedida1"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <com.a3jfernando.serialport.libraries.DigitSpeedViewLibrary.DigitSpeedView
+                        android:id="@+id/digit_speed_view_real1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:backgroundDrawable="@color/DarkGrayColor"
+                        app:showUnit="true"
+                        app:speed="0"
+                        app:speedTextColor="@color/WhiteColor"
+                        app:speedTextSize="70dp"
+                        app:unit="Medida"
+                        app:unitTextColor="@color/WhiteColor"
+                        app:unitTextSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--..........................................................-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrayColor"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/time"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtTitleMedidaPosition2"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="asdsadasdasd"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtHourMedida2"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="12:34 PM"
+                            android:textStyle="bold"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+                    <com.a3jfernando.serialport.libraries.DigitSpeedViewLibrary.DigitSpeedView
+                        android:id="@+id/digit_speed_view_real2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:backgroundDrawable="@color/DarkGrayColor"
+                        app:showUnit="true"
+                        app:speed="0"
+                        app:speedTextColor="@color/WhiteColor"
+                        app:speedTextSize="70dp"
+                        app:unit="Medida"
+                        app:unitTextColor="@color/WhiteColor"
+                        app:unitTextSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--..........................................................-->
+            <!--..........................................................-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrayColor"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/time"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtTitleMedidaPosition3"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="asdsadasdasd"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtHourMedida3"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="12:34 PM"
+                            android:textStyle="bold"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+                    <com.a3jfernando.serialport.libraries.DigitSpeedViewLibrary.DigitSpeedView
+                        android:id="@+id/digit_speed_view_real3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:backgroundDrawable="@color/DarkGrayColor"
+                        app:showUnit="true"
+                        app:speed="0"
+                        app:speedTextColor="@color/WhiteColor"
+                        app:speedTextSize="70dp"
+                        app:unit="Medida"
+                        app:unitTextColor="@color/WhiteColor"
+                        app:unitTextSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--..........................................................-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrayColor"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/time"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtTitleMedidaPosition4"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="asdsadasdasd"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtHourMedida4"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="12:34 PM"
+                            android:textStyle="bold"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+                    <com.a3jfernando.serialport.libraries.DigitSpeedViewLibrary.DigitSpeedView
+                        android:id="@+id/digit_speed_view_real4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:backgroundDrawable="@color/DarkGrayColor"
+                        app:showUnit="true"
+                        app:speed="0"
+                        app:speedTextColor="@color/WhiteColor"
+                        app:speedTextSize="70dp"
+                        app:unit="Medida"
+                        app:unitTextColor="@color/WhiteColor"
+                        app:unitTextSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--..........................................................-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrayColor"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/time"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtTitleMedidaPosition5"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="asdsadasdasd"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtHourMedida5"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="12:34 PM"
+                            android:textStyle="bold"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+                    <com.a3jfernando.serialport.libraries.DigitSpeedViewLibrary.DigitSpeedView
+                        android:id="@+id/digit_speed_view_real5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:backgroundDrawable="@color/DarkGrayColor"
+                        app:showUnit="true"
+                        app:speed="0"
+                        app:speedTextColor="@color/WhiteColor"
+                        app:speedTextSize="70dp"
+                        app:unit="Medida"
+                        app:unitTextColor="@color/WhiteColor"
+                        app:unitTextSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--..........................................................-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearLayout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrayColor"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/time"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtTitleMedidaPosition6"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="asdsadasdasd"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtHourMedida6"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="12:34 PM"
+                            android:textStyle="bold"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+                    <com.a3jfernando.serialport.libraries.DigitSpeedViewLibrary.DigitSpeedView
+                        android:id="@+id/digit_speed_view_real6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:backgroundDrawable="@color/DarkGrayColor"
+                        app:showUnit="true"
+                        app:speed="0"
+                        app:speedTextColor="@color/WhiteColor"
+                        app:speedTextSize="70dp"
+                        app:unit="Medida"
+                        app:unitTextColor="@color/WhiteColor"
+                        app:unitTextSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--..........................................................-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearLayout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrayColor"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/time"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtTitleMedidaPosition7"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="asdsadasdasd"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtHourMedida7"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="12:34 PM"
+                            android:textStyle="bold"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+                    <com.a3jfernando.serialport.libraries.DigitSpeedViewLibrary.DigitSpeedView
+                        android:id="@+id/digit_speed_view_real7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:backgroundDrawable="@color/DarkGrayColor"
+                        app:showUnit="true"
+                        app:speed="0"
+                        app:speedTextColor="@color/WhiteColor"
+                        app:speedTextSize="70dp"
+                        app:unit="Medida"
+                        app:unitTextColor="@color/WhiteColor"
+                        app:unitTextSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--..........................................................-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearLayout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrayColor"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/time"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtTitleMedidaPosition8"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="asdsadasdasd"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtHourMedida8"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="12:34 PM"
+                            android:textStyle="bold"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+                    <com.a3jfernando.serialport.libraries.DigitSpeedViewLibrary.DigitSpeedView
+                        android:id="@+id/digit_speed_view_real8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:backgroundDrawable="@color/DarkGrayColor"
+                        app:showUnit="true"
+                        app:speed="0"
+                        app:speedTextColor="@color/WhiteColor"
+                        app:speedTextSize="70dp"
+                        app:unit="Medida"
+                        app:unitTextColor="@color/WhiteColor"
+                        app:unitTextSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--..........................................................-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearLayout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrayColor"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/time"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtTitleMedidaPosition9"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="asdsadasdasd"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtHourMedida9"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="12:34 PM"
+                            android:textStyle="bold"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+                    <com.a3jfernando.serialport.libraries.DigitSpeedViewLibrary.DigitSpeedView
+                        android:id="@+id/digit_speed_view_real9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:backgroundDrawable="@color/DarkGrayColor"
+                        app:showUnit="true"
+                        app:speed="0"
+                        app:speedTextColor="@color/WhiteColor"
+                        app:speedTextSize="70dp"
+                        app:unit="Medida"
+                        app:unitTextColor="@color/WhiteColor"
+                        app:unitTextSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--..........................................................-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearLayout10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/LightGrayColor"
+                    android:layout_marginTop="16dp"
+                    android:layout_below="@+id/time"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:orientation="vertical"
+                        android:gravity="center_vertical"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtTitleMedidaPosition10"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="asdsadasdasd"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="18dp" />
+                        <TextView
+                            android:layout_gravity="center"
+                            android:id="@+id/txtHourMedida10"
+                            android:layout_width="150dp"
+                            android:layout_height="wrap_content"
+                            android:text="12:34 PM"
+                            android:textStyle="bold"
+                            android:textColor="@color/WhiteColor"
+                            android:textSize="22dp" />
+                    </LinearLayout>
+                    <com.a3jfernando.serialport.libraries.DigitSpeedViewLibrary.DigitSpeedView
+                        android:id="@+id/digit_speed_view_real10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:backgroundDrawable="@color/DarkGrayColor"
+                        app:showUnit="true"
+                        app:speed="0"
+                        app:speedTextColor="@color/WhiteColor"
+                        app:speedTextSize="70dp"
+                        app:unit="Medida"
+                        app:unitTextColor="@color/WhiteColor"
+                        app:unitTextSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

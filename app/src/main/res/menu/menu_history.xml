@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/emptyHistory"
+        android:orderInCategory="100"
+        android:title="Limpiar Historicos"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="Opciones"
+        android:icon="@drawable/ic_launcher_menu"
+        app:showAsAction="always" >
+
+        <menu>
+            <item android:id="@+id/menu_view_grafic"
+                android:icon="@drawable/ic_icon_grafic"
+                android:title="@string/menu_grafic">
+            </item>
+            <item android:id="@+id/menu_export_pdf"
+                android:icon="@drawable/ic_icon_pdf"
+
+                android:title="@string/menu_export_pdf">
+            </item>
+
+            <item android:id="@+id/menu_last_report"
+                android:icon="@drawable/ic_icon_pdf"
+                android:title="@string/menu_export_last_pdf">
+            </item>
+
+        </menu>
+    </item>
+
+
+</menu>

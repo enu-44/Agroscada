@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:paddingLeft="3dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/txtNombreEquipment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TipoEquipo"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDescripcionEquipment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="descripcion..."
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="98dp"
+                android:layout_height="27dp"
+                app:srcCompat="@drawable/agroscadapng" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewDevice"
+            android:layout_width="match_parent"
+            android:layout_height="59dp" />
+
+    </LinearLayout>
+</LinearLayout>

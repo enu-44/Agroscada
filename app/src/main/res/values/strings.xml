@@ -1,0 +1,88 @@
+<resources>
+    <!--Recursos app -->
+
+    <string name="app_name">Agroscada</string>
+
+    <!--Menu App -->
+    <string name="menu_configuracion">Configuracion</string>
+    <string name="tipo_variable">Variables</string>
+    <string name="menu_real_time">Medidas Tiempo Real</string>
+    <string name="menu_cerrar_sesion">Cerrar Sesion</string>
+    <string name="menu_historial">Historial</string>
+    <string name="menu_serial_monitor">Monitor Serial</string>
+
+
+    <!--Menu History -->
+    <string name="menu_grafic">Ver Grafico</string>
+    <string name="menu_export_pdf">Exportar PDF</string>
+    <string name="menu_export_last_pdf">Ultimo Reporte</string>
+
+
+    <!--Navigation-->
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Nombre usuario/ email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Iniciar Sesion</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">Este email es invalido</string>
+    <string name="error_password_required">La contraseña es requerida</string>
+    <string name="error_invalid_password">Esta contraseña es demasiado corta</string>
+    <string name="error_incorrect_password">Esta contraseña es incorrecta</string>
+    <string name="error_field_required">Este campo es requerido</string>
+    <string name="error_field_required_caracteres">Debe contener solamente 1 caracter</string>
+    <string name="error_field_required_mayor_cero">El valor debe ser mayor a cero</string>
+    <string name="error_field_variables_required">Debe agregar variables al proceso</string>
+    <string name="error_field_required_variable_update">Seleccione la variable a editar</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+
+    <string name="title_activity_equipo">Equipos</string>
+
+
+    <!-- Strings related to Configuracion -->
+    <string name="serail_write_on">Letra para encender</string>
+    <string name="serial_write_off">Letra Apagar</string>
+    <string name="serial_write_reset">Letra Resetear</string>
+
+
+    <string name="btn_json_obj_request">Json Object Request</string>
+    <string name="btn_json_array_request">Json Array Request</string>
+
+
+    <string name="cancel">Cancelar</string>
+    <string name="signin">Continuar</string>
+
+
+    <string name="title_activity_menu_control">Menu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <!--Formulario Registro Equipòs-->
+    <string name="name_equipo">Nombre Actuador</string>
+    <string name="description_equipo">Descripcion Actuador</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--Fragments Activity MENU Activity-->
+    <string name="title_fragment_variables">VARIABLES</string>
+    <string name="title_fragment_control">CONTROL</string>
+    <string name="title_fragment_monitor_serial">MONITOR SERIAL</string>
+    <string name="title_fragment_process">PROCESOS</string>
+
+
+
+    <string name="results_global_search">Mostrando %d Resultados</string>
+
+</resources>

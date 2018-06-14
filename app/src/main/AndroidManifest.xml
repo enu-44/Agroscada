@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.a3jfernando.serialport">
+
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--
+     To auto-complete the email text field in the login form with the user's emails
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    -->
+    <application
+        android:name=".controllers.AppController"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".pages.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- Servicio de conectividad a internet -->
+        <receiver
+            android:name=".ConectionInternet.ConnectivityReceiver"
+            android:enabled="true">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <!-- Servicio que ejecuta la aplicacion al arrancar android -->
+        <receiver
+            android:name=".Services.AutoRunApp.RunApp"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <!-- Servicio de USB Serial -->
+        <service
+            android:name=".Services.UsbService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".pages.LoginActivity"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".pages.ChartActivity"
+            android:parentActivityName=".pages.ReportVariables"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pages.ChartLineRealTime"
+            android:parentActivityName=".pages.TiposVariableActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:label="@string/menu_real_time"
+            android:name=".MainActivity"
+            android:parentActivityName=".layouts.MenuControlActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".pages.ConfigurationActivity" />
+
+        <activity
+            android:name=".pages.ReportVariables"
+            android:parentActivityName=".layouts.MenuControlActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".pages.TiposVariableActivity"
+            android:parentActivityName=".layouts.MenuControlActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".pages.EquipoActivity"
+            android:label="@string/title_activity_equipo"
+            android:parentActivityName=".layouts.MenuControlActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".layouts.MenuControlActivity"
+            android:label="@string/title_activity_menu_control"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".pages.DevicesInfo"
+            android:parentActivityName=".layouts.MenuControlActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".pages.DeviceMasterActivity"
+            android:label="Informacion"
+            android:parentActivityName=".layouts.MenuControlActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pages.control.ControlDeviceActivity"
+            android:label="Control"
+            android:parentActivityName=".layouts.MenuControlActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".SincronizarInformacionActivity"
+            android:label="Sincronizacion"
+            android:parentActivityName=".layouts.MenuControlActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+        <activity android:name=".pages.AccountActivity"
+            android:parentActivityName=".layouts.MenuControlActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+    </application>
+
+</manifest>

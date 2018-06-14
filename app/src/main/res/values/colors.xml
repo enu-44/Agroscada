@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Recurso de colores-->
+    <color name="colorPrimary">#017126</color>
+    <color name="colorPrimaryDark">#029332</color>
+    <color name="colorAccent">#00B23B</color>
+
+    <color name="colorDisabled">#8eead4</color>
+    <color name="colorRed">#8eead4</color>
+    <color name="colorGray">#bababa</color>
+
+
+    <color name="BlueColor">#00A0C6</color>
+    <color name="PurpleLigh">#897c89</color>
+    <color name="BlackColor">#000000</color>
+    <color name="WhiteColor">#d2ffffff</color>
+    <color name="RedMainColor">#e30803</color>
+    <color name="LightRedColor">#dc5f73</color>
+    <color name="MediumLightRedColor">#df3752</color>
+    <color name="DarkGrayColor">#52656b</color>
+    <color name="LightGrayColor">#b9b9cd</color>
+    <color name="OrangeColor">#eb6428</color>
+    <color name="GreenColor">#56B34C</color>
+
+
+    <!--Speed Digit-->
+    <color name="digit">#333333</color>
+    <color name="cyan">#00A0C6</color>
+    <color name="green">#99cc00</color>
+    <color name="light_grey_trasparent">#3fdddddd</color>
+
+
+</resources>
